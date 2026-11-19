@@ -1,0 +1,17 @@
+# Verified Windows 11 / CPython 3.12.10, 2026-10-15.
+# Recreate the observed ML + DB runtime. No install is performed by the application.
+cloudpickle==3.1.2
+joblib==1.6.0
+lightgbm==4.7.0
+narwhals==2.27.1
+numpy==2.5.4
+pandas==2.3.3
+psycopg==3.3.6
+psycopg-binary==3.3.6
+python-dateutil==2.9.0.post0
+pytz==2026.5
+scikit-learn==1.9.1
+scipy==1.18.1
+six==1.17.0
+threadpoolctl==3.7.0
+tzdata==2026.5

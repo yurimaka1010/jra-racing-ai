@@ -1,0 +1,14 @@
+<!doctype html><html lang="ja"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>KEIBA LAB｜次世代D39試験</title><link rel="stylesheet" href="/style.css"></head>
+<body><header><a class="brand" href="/">◈ KEIBA LAB <small>LOCAL · PRIVATE</small></a><nav><a href="/">4モデルの予想</a><a href="/results">D39の結果</a><a href="/research">券種別研究</a><a class="active" href="/next">次世代D39試験</a></nav></header>
+<main><div class="intro"><div><p class="eyebrow">INDEPENDENT · SAVED BEFORE THE RACE</p><h1>新しい候補も、同じレースで。</h1><p>異常レースを除いた39＋8特徴量モデル。既存4モデルを置き換えず、独立して記録します。</p></div><label>開催日<select id="day"><option>2026-10-25</option></select></label></div>
+<div class="notice">予想画面には主力Hを含みます。結果・品質・収支はD39系だけで計算し、H・Stage 7の途中結果は開きません。保存前・締切後の欠測を事後生成で埋めません。</div>
+<div class="filters"><label>表示する試験モデル <select id="candidate"><option value="improved">前走タイム接続版（新しい保存予想）</option><option value="original">改善前47項目（保存版を維持）</option></select></label></div>
+<div id="next-status" role="status">保存記録を確認しています…</div><p id="next-model" class="provenance"></p><p id="next-feature-note" class="notice"></p><section id="next-coverage" class="stats"></section>
+<div class="filters" id="next-views"><button class="button active" id="show-reference" data-view="reference" aria-pressed="true">現在の参考予想</button><button class="button" id="show-predictions" data-view="formal" aria-pressed="false">T−10固定予想</button><button class="button" id="show-results" data-view="results" aria-pressed="false">D39系の答え合わせ</button></div>
+<p class="notice" id="next-view-note">出馬表に基づく最新の保存済み参考予想を表示します。生成時刻を確認してください。</p>
+<label class="missing-filter"><input type="checkbox" id="next-missing-only" disabled> 本モデルの正式予想がないレースだけ表示</label>
+<div class="filters" id="next-csv-downloads"><a class="button" id="download-next-detail" aria-disabled="true" download>結果明細CSV</a><a class="button" id="download-next-summary" aria-disabled="true" download>成績・収支CSV</a></div>
+<p class="muted" id="next-csv-note">選択中の試験モデルの正式T−10結果をCSVへ保存します。未保存レースは画面に理由付きで残し、参考予想と主力Hの結果はCSVに含めません。</p>
+<section id="next-metrics"></section><section id="next-races"></section>
+<p class="muted">単勝の仮想判断は固定のEV5%以上・100円・最大1点。表示オッズは払戻額を保証しません。複勝・ワイド・馬連はこの当日記録の対象外で、収益を補完しません。学習・較正期間の成績を未使用評価として表示しません。</p></main>
+<script type="module" src="/next.js"></script></body></html>

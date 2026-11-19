@@ -1,0 +1,3 @@
+# Installation requires the user's separate approval. Nothing auto-installs.
+# This is a compatibility range, not a reproducible production lockfile.
+psycopg[binary]>=3.2,<4

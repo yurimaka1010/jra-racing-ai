@@ -1,0 +1,40 @@
+{
+  "format_version": 1,
+  "source": "synthetic",
+  "official_base_yen": 100,
+  "source_reviewed_locally": false,
+  "abc_mapping_reviewed_locally": false,
+  "status_column": "example_hr_category",
+  "flag_rules": [
+    {"wager_type": "tansho", "kind": "not_established", "column": "example_win_establishment", "normal_value": "0", "active_value": "1", "reviewed_locally": false},
+    {"wager_type": "tansho", "kind": "special_payment", "column": "example_win_special", "normal_value": "0", "active_value": "1", "reviewed_locally": false},
+    {"wager_type": "tansho", "kind": "not_offered", "column": "example_win_sale", "normal_value": "0", "active_value": "1", "reviewed_locally": false},
+    {"wager_type": "fukusho", "kind": "not_established", "column": "example_place_establishment", "normal_value": "0", "active_value": "1", "reviewed_locally": false},
+    {"wager_type": "fukusho", "kind": "special_payment", "column": "example_place_special", "normal_value": "0", "active_value": "1", "reviewed_locally": false},
+    {"wager_type": "fukusho", "kind": "not_offered", "column": "example_place_sale", "normal_value": "0", "active_value": "1", "reviewed_locally": false}
+  ],
+  "cases": [
+    {
+      "race_key": {"kaisai_nen": "2025", "kaisai_tsukihi": "0106", "keibajo_code": "04", "kaisai_kai": "01", "kaisai_nichime": "02", "race_bango": "09"},
+      "wager_type": "tansho",
+      "state": "normal",
+      "revision_review": "unconfirmed",
+      "dead_heat": false,
+      "place_paid_positions": null,
+      "targets": [{"horse_number": "01", "payout_yen_per_100": 350, "plus10": null}]
+    },
+    {
+      "race_key": {"kaisai_nen": "2025", "kaisai_tsukihi": "0106", "keibajo_code": "04", "kaisai_kai": "01", "kaisai_nichime": "02", "race_bango": "09"},
+      "wager_type": "fukusho",
+      "state": "normal",
+      "revision_review": "unconfirmed",
+      "dead_heat": false,
+      "place_paid_positions": 3,
+      "targets": [
+        {"horse_number": "01", "payout_yen_per_100": 150, "plus10": null},
+        {"horse_number": "03", "payout_yen_per_100": 180, "plus10": null},
+        {"horse_number": "07", "payout_yen_per_100": 240, "plus10": null}
+      ]
+    }
+  ]
+}

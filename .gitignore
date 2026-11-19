@@ -1,0 +1,57 @@
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+*.egg-info/
+build/
+dist/
+.env
+.env.*
+!.env.example
+*.pgpass
+pgpass.conf
+*.log
+*.csv
+*.tsv
+*.parquet
+*.db
+*.sqlite*
+*.dump
+*.backup
+reports/*
+!reports/README.md
+!reports/test_results.md
+# Provisioning instructions belong in docs; dump SQL files are excluded elsewhere.
+*.sql
+!docs/readonly_user_setup.sql
+# Real reconciliation inputs/outputs belong outside this OneDrive project.
+reconciliation-input/
+reference*.json
+reconciliation*.json
+reconciliation.md
+!examples/reconciliation.synthetic.json
+h1-config*.json
+!examples/h1-config.synthetic.json
+# Phase 2 artifacts must live in the approved local ml-v01 folder.
+ml-inputs/
+datasets/
+models/
+predictions/
+evaluations/
+*.lgb.txt
+*.joblib
+*.pkl
+mapping.reviewed.json
+mapping.draft.json
+dataset.json
+# Version 0.2 runtime inputs and artifacts belong outside OneDrive.
+inputs/
+simulations/
+policies/
+db-config*.json
+schedules*.json
+odds*.json
+payouts*.json
+policy.json
+ledger.json
+summary.json
